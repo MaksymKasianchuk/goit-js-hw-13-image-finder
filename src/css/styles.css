@@ -1,0 +1,96 @@
+:root {
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  *{
+    box-sizing: border-box;
+  }
+  .list{
+    list-style: none;
+    padding: 0;
+  }
+
+  body {
+    transition: color 150ms var(--timing-function),
+      background-color 150ms var(--timing-function);
+      padding: 20px;
+      font-family: 'Poppins', sans-serif;
+      background-color: rgba(47, 48, 58, 0.6);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: wheat;
+  }
+  .search-form{
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .search-inp{
+    width: 320px;
+    height: 50px;
+    overflow: hidden;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  .search-inp::placeholder{
+    font-size: 20px;
+    align-self: center;
+    text-align: center;
+  }
+  .search-inp:hover,
+  .search-inp:focus {
+    outline: none;
+    border: 3px solid cyan;
+  }
+  .load-more-btn {
+    display: block;
+    margin: 0 auto;
+    font-family:'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #fff;
+    min-width: 200px;
+    height: 50px;
+    background-color: rgb(35, 105, 235);
+    border: none;
+    border-radius: 3px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .load-more-btn:hover,
+  .load-more-btn:focus {
+      background-color: cyan;
+    }
+    .gallery{
+        display: flex;
+        margin: -5px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .gallery-item{
+        margin: 5px;
+        font-family: 'Poppins', sans-serif;
+        background-color: antiquewhite;
+        color: rgb(27, 12, 36);
+        border-radius: 4px;
+    }
+    .photo-img{
+        width: 350px;
+        height: 250px;
+    }
+    .stats{
+        padding-left: 20px;
+        cursor: pointer;
+    }
+    .stats-item:hover,
+    .stats-item:focus{
+        color: cyan;
+    }
